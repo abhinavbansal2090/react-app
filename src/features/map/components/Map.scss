@@ -1,0 +1,65 @@
+@import "lib/constants/index";
+
+.H_l_anchor {
+  display: none;
+}
+
+.map {
+  width: 100%;
+  height: calc(100vh - 49px);
+  border: 0;
+  position: relative;
+  background-color: $ULTRA_LIGHT_BACKGROUND;
+  &__container {
+    &-absolute {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      &-bottom {
+        bottom: 20px;
+      }
+      &-top {
+        top: 16px;
+      }
+      & .searchBar {
+        margin: 0 16px;
+        box-sizing: border-box;
+        width: calc(100% - 32px);
+      }
+      & .absolute-box {
+        background-color: $WHITE;
+        width: calc(100% - 32px);
+        margin: 0 16px 16px 16px;
+        border: 1px solid $LIGHT_GREY;
+        font-size: 16px;
+        box-sizing: border-box;
+        line-height: 24px;
+        text-align: center;
+        color: $BLACK;
+        font-weight: 400;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+          0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      & .ButtonBig-default {
+        margin: 0 16px;
+        width: calc(100% - 32px);
+        & button {
+          width: 100%;
+        }
+      }
+    }
+    &.container-fullheight {
+      padding-top: 0;
+      min-height: calc(100vh - 70px);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "lib/constants/index";
+
+.segmented-control {
+  border: 0;
+  padding: 10px 16px;
+  & ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: $LIGHT_GREY;
+    border-radius: 8px;
+    & div {
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      min-height: 32px;
+      color: $BLACK;
+      font-weight: 500;
+      font-size: 14px;
+      background-color: $LIGHT_GREY;
+      line-height: 24px;
+      margin: 2px;
+      padding: 0 10px;
+      &.Mui-selected {
+        background-color: $WHITE !important;
+        color: $PRIMARY_DARK !important;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06),
+          0px 2px 6px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 6px;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "lib/constants/index";
+
+.menuItem {
+  &.touchableContainer {
+    display: flex;
+    background-color: $WHITE;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid $LIGHT_GREY;
+    padding: 10px 16px;
+    max-height: 40px;
+    min-height: 40px;
+  }
+  & .filterText {
+    font-size: 16px;
+  }
+  & .arrow {
+    height: 10px;
+    width: 5px;
+  }
+}

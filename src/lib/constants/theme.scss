@@ -1,0 +1,53 @@
+@import "theme-switcher";
+@import "colors";
+
+// below is an example use of theming
+// feel free to change colors of particular css props
+// only remember to declare them first in $themes
+@mixin defaultTheming() {
+  @include theme() {
+    color: theme-get('text-color');
+    background-color: theme-get('bg-color');
+    border-color: theme-get('bg-color');
+  }
+}
+
+@mixin defaultShadow() {
+  @include theme() {
+    box-shadow: inset 0px -1px 0px theme-get('shadow-color'), inset 0px 1px 0px theme-get('shadow-color');
+  }
+}
+
+@mixin lightGreyTheming() {
+  @include theme() {
+    color: theme-get('text-color');
+    background-color: theme-get('bg-color-light-grey');
+  }
+}
+
+@mixin colorThemed() {
+  @include theme() {
+    color: theme-get('text-color');
+  }
+}
+
+@mixin backgroundThemed() {
+  @include theme() {
+    background-color: theme-get('bg-color');
+  }
+}
+
+$themes: (
+        dark: (
+                'text-color': $WHITE,
+                'bg-color': $BLACK_LIGHTER,
+                'bg-color-light-grey': $BLACK,
+                'shadow-color': $BLACK_SHADOW,
+        ),
+        light: (
+                'text-color': $BLACK,
+                'bg-color': $WHITE,
+                'bg-color-light-grey': $ULTRA_LIGHT_BACKGROUND,
+                'shadow-color': $ULTRA_LIGHT_BACKGROUND
+        )
+);

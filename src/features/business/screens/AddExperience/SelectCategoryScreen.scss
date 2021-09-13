@@ -1,0 +1,11 @@
+@import 'lib/constants/index';
+
+.select-category {
+  background-color: $ULTRA_LIGHT_BACKGROUND;
+  &__list {
+    margin-bottom: 60px;
+  }
+  & .touchableContainer &.container {
+    min-height: calc(100vh - 82px);
+  }
+}

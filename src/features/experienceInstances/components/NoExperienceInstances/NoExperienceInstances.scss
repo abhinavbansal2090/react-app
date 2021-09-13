@@ -1,0 +1,31 @@
+@import "lib/constants/index";
+
+.no-experience-instances {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__add-new-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 40px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 28px;
+    color: $DARKER_GREY;
+    margin-bottom: 24px;
+  }
+
+  &__add-new-btn {
+    text-transform: none;
+    margin: 0 16px 100px;
+    width: 100%;
+  }
+}

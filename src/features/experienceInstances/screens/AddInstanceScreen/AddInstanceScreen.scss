@@ -1,0 +1,49 @@
+@import "lib/constants/index";
+
+.add-instance {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    & .MuiInputBase-input {
+      min-height: 31px;
+    }
+  }
+
+  &__input-container {
+    margin-bottom: 20px;
+  }
+
+  &__native-select-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 16px;
+  }
+
+  &__msg-container {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: $LIGHT_GREY;
+    box-sizing: content-box;
+    padding-top: 16px;
+    background-color: $ULTRA_LIGHT_BACKGROUND;
+  }
+
+  &__btn-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: $ULTRA_LIGHT_BACKGROUND;
+  }
+
+  &__error {
+    color: $RED;
+    text-align: center;
+  }
+
+  &__continue {
+    color: $DARKER_GREY;
+    text-align: center;
+  }
+}

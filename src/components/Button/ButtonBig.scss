@@ -1,0 +1,81 @@
+@import 'lib/constants/index';
+
+.ButtonBig-backButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: calc(100% - 32px);
+  & .ButtonBack {
+    min-width: 98px !important;
+    width: 40% !important;
+    color: $PRIMARY !important;
+    background-color: $WHITE !important;
+  }
+  & .main.ButtonBig.main-full {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+.main {
+  &.ButtonBig {
+    height: 48px;
+    min-width: 295px;
+    border-radius: 48px;
+    font-weight: 500;
+    text-transform: none;
+    justify-content: center;
+    align-items: center;
+    color: $WHITE;
+    font-size: 16px;
+    background-color: $PRIMARY;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06),
+      0px 2px 6px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.08);
+    &.outlined {
+      background-color: $WHITE;
+      color: $PRIMARY_DARK;
+      border: 1px solid $PRIMARY;
+      &:disabled {
+        color: $PRIMARY_DARK;
+        background-color: $WHITE;
+        opacity: 0.5;
+      }
+      &:hover {
+        background-color: $WHITE;
+        color: $PRIMARY_DARK;
+      }
+    }
+    &.red {
+      background-color: $RED;
+      color: $WHITE;
+      border: 1px solid $RED;
+      &:hover {
+        background-color: $WHITE;
+        color: $RED;
+      }
+    }
+    &.purple {
+      background-color: $PURPLE;
+      border: 1px solid $PURPLE;
+      &:hover {
+        background-color: $WHITE;
+        color: $PURPLE;
+      }
+    }
+    &:disabled {
+      background-color: $PRIMARY_DISABLED;
+      color: $WHITE;
+    }
+    &:hover {
+      background-color: $PRIMARY;
+      opacity: 0.9;
+    }
+    &.main-full {
+      margin: 0 16px;
+      min-width: calc(100% - 32px);
+    }
+    &-fixed {
+      bottom: 16px;
+    }
+  }
+}

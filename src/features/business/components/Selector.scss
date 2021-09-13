@@ -1,0 +1,21 @@
+@import 'lib/constants/index';
+
+.selector {
+  &.touchableContainer {
+    max-height: 44px;
+    min-height: 44px;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    & p {
+      font-size: 16px;
+      color: $DARKER_GREY;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    & .arrow {
+      height: 14px;
+      width: 8px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// to apply theming simply in your class:
+
+// @include theme() {
+//    color: theme-get('text-color');
+//    background-color: theme-get('bg-color');
+//  }
+@mixin theme() {
+  @each $theme, $map in $themes {
+    $theme-map: $map !global;
+    .#{$theme} & {
+      @content;
+    }
+  }
+  $theme-map: null !global;
+}
+
+@function theme-get($key) {
+  @return map-get($theme-map, $key);
+}

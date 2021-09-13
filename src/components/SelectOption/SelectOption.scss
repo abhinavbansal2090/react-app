@@ -1,0 +1,27 @@
+@import 'lib/constants/index';
+
+.selectOption {
+  &.touchableContainer {
+    background-color: $WHITE;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid $LIGHT_GREY;
+    padding: 16px;
+    min-height: 40px;
+    max-height: 40px;
+  }
+  & .title {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 0;
+  }
+  & span {
+    margin-left: 3px;
+    font-size: 13px;
+  }
+  & .tick {
+    height: 9px;
+    width: 13px;
+  }
+}

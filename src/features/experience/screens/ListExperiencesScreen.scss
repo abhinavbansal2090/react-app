@@ -1,0 +1,36 @@
+@import "lib/constants/index";
+
+.list-experiences-screen {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background-color: $ULTRA_LIGHT_BACKGROUND;
+
+  &__add-new-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 42px);
+    overflow: hidden;
+  }
+
+  &__title {
+    text-align: center;
+    padding: 0 40px;
+    font-size: 22px;
+    color: $DARKER_GREY;
+    margin-bottom: 36px;
+  }
+
+  &__add-new-btn {
+    text-transform: none;
+    margin: 16px 0;
+  }
+
+  &__error-text {
+    margin-bottom: 20px;
+  }
+}
+

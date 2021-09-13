@@ -1,0 +1,51 @@
+@import "lib/constants/index";
+
+.archive-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    box-sizing: border-box;
+    max-width: 600px;
+    max-height: 350px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    color: $BLACK;
+    background-color: $WHITE;
+    padding: 24px 16px 0 16px;
+    margin: 12px;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  &__question {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+
+  &__disclaimer {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 24px;
+  }
+
+  &__archive-msg {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    color: $PRIMARY;
+
+    &--error {
+      color: $RED;
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+@import "lib/constants/index";
+
+.selectOptionList {
+  margin-bottom: 20px;
+  @include defaultTheming();
+}
+.selectOptionList:last-of-type {
+  margin-bottom: 50px;
+  @include defaultTheming();
+}
+.helper-label {
+  padding: 0 16px;
+  text-transform: uppercase;
+  color: $DARKER_GREY;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  @include lightGreyTheming();
+}

@@ -1,0 +1,49 @@
+@import 'lib/constants/index';
+
+.container.container-top {
+  max-width: 100%;
+  border-bottom: 0.5px solid;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  display: grid;
+  top: 0;
+  z-index: 999;
+  @include defaultShadow();
+  @include defaultTheming();
+}
+
+.headerContainer {
+  min-height: 40px;
+  padding: 4px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  border-bottom-width: 0.5px;
+  //@include defaultTheming();
+  &__subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  &.headerContainer-subtitle {
+    padding: 0;
+    & .headerContainer__title {
+      margin-top: 0;
+    }
+    span {
+      color: $DARKER_GREY;
+      margin-top: 0;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import './colors.scss';
+@import './theme';
+
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  width: 100%;
+  &.loader {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  &-fullheight {
+    padding-top: 20px;
+    min-height: calc(100vh - 62px);
+    overflow: hidden;
+  }
+}
+
+.exit_modal {
+  &.modal__container {
+    min-height: auto;
+  }
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid $PRIMARY !important;
+}
+.MuiInput-underline.Mui-error:after {
+  border-bottom: 2px solid $RED !important;
+}
+
+.rtl {
+  direction: rtl;
+}
